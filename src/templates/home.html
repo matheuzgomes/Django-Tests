@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<head>Test</head>
+<h1>Home Page</h1>
+
+<p>
+{{my_text }}, {{my_number }}
+{{test }},{{test1}}
+</p>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    {%if test == "hi"%}
+        <li>{{my_number}}</li>
+    {% endif %}
+    <!-- {% for item in test1 %}
+        {%if item == 123 %}
+            <li>{{ forloop.counter }} - {{test1}}</li>
+        {% endif %}
+
+{%endfor%} -->
+</ul>
+
+
+{%endblock %}

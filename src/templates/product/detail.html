@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>{{ object.title }}</h1>
+<p>{% if object.description %}{{obj.description}}{%else%} - Description coming soon{% endif %}</p>
+<p>{{ object.summary }}</p>
+
+{{object.price}}
+{% lorem 6 p random%}
+{%endblock%}
+
